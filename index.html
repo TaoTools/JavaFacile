@@ -1,130 +1,35 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="src/css/vendor/bootstrap-4.5.0/bootstrap.min.css">
-
-    <!-- My tags -->
-    <link rel="stylesheet" href="src/css/general.css">
-    <link rel="icon" href="src/img/icon.ico">
-    <title>JavaFacile</title>
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="src/js/main.js"></script>
-
-</head>
-
-<body class="Site">
-<ul id="page">
-    <li class="pre">
-
-        <h1 style="margin-top: 5%" class="text-center">Bienvenue sur Java facile !</h1>
-        <h5 class="text-center">Apprenez le java intuitivement</h5>
-
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary"
-                    onclick="affiche('.intro', 700, 500, 1000); intro(); Fullscreen();" style="margin-top: 1%">Commencer
-            </button>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TaoLearn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/css/general.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="parallax__group hero-container">
+        <div class="hero-text">
+          <h2>TaoLearn</h2>
+          <ul>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#" class="btn btnGray">Apprendre</a></li>
+          </ul>
         </div>
 
-        <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary"
-                    onclick="affiche('.ldp', 700, 500, 1000);" style="margin-top: 50%">Language de programation ?
-            </button>
+        <h1 style="text-align: center; margin-top: 15%; font-size: 80px">Apprendre la programmation</h1>
+
+      </div>
+      <div class="parallax__group info-container">
+        <img src="./src/img/java.png" alt="Java logo" style="width: 512px; height: 512px"/>
+        <div class="text-container">
+          <h2>Apprendre le java</h2>
+          <p>Tutoriel pour apprendre le java.</p>
+          <p>Niveau requis : Avoir un ordinateur</p>
+          <a href="./java.html" class="btnInfo btn">Commencer</a>
         </div>
-
-    </li>
-
-    <li class="ldp">
-        <section style="position: fixed; top: 0">
-            <h1 class="text-center" style="margin-top: 10%">Qu'est-ce qu'un language de programation ?</h1>
-            <p class="text-center"> Informations tirés de <code>wikipedia.org</code></p>
-        </section>
-
-        <section class="introFrise">
-            <div class="container mt-5 mb-5">
-                <div class="row">
-                        <p style="text-align: center">"Un langage de programmation est une notation conventionnelle destinée à formuler des algorithmes et produire des programmes informatiques qui les appliquent. D'une manière similaire à une langue naturelle, un langage de programmation est composé d'un alphabet, d'un vocabulaire, de règles de grammaire et de significations."</p>
-
-                    <p style="margin: 1%">Pour simplifier le texte cité, un language de programmation est un genre de "document" avec une notation spéciale qui peut être compris par votre ordinateur. Il existe différents languages adapté plus ou moins à certaines utilisations comme par exemple le php pour le web ou le java pour l'embarqué.</p>
-                </div>
-            </div>
-        </section>
-
-    </li>
-
-    <li class="intro">
-
-        <section class="introTitle1">
-            <h1 class="text-center" style="margin-top: 10%">Avant tout, un peu de contexte !</h1>
-            <p class="text-center"> Informations tirés de <code>freejavaguide.com</code></p>
-        </section>
-
-        <section class="introFrise">
-            <div class="container mt-5 mb-5">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <ul class="timeline" id="tm">
-                            <li>
-                                <a href="#">Un language simplifié</a>
-                                <a href="#" class="float-right">juin 1991</a>
-                                <p>Java a été lancé comme un projet appelé «Oak» par James Gosling.
-                                    Les objectifs de Gosling étaient d'implémenter une machine virtuelle et un langage
-                                    qui avaient une notation familière du language C mais avec une plus grande
-                                    uniformité et simplicité que celui-ci.</p>
-                            </li>
-                            <li>
-                                <a href="#">Publication</a>
-                                <a href="#" class="float-right">1995</a>
-                                <p>La première implémentation publique a été Java 1.0.
-                                    Elle a fait la promesse de "Write Once, Run Anywhere" ("écrivez une fois, utilisez
-                                    partout" En français X)), avec des runtimes gratuits sur les plates-formes
-                                    populaires.</p>
-                            </li>
-                            <li>
-                                <a href="#">Rachat</a>
-                                <a href="#" class="float-right">1997</a>
-                                <p>Sun a contacté l'organisme de normalisation ISO / CEI JTC1 et plus tard Ecma
-                                    International pour officialiser Java, mais il s'est rapidement retiré du processus.
-                                    Java reste un standard propriétaire de facto contrôlé par le Java Community
-                                    Process.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="introNext">
-            <div id="container" class="d-flex justify-content-center">
-                <button class="learn-more">
-    <span class="circle" aria-hidden="true">
-      <span class="icon arrow"></span>
-    </span>
-                    <span class="button-text">IDE & install</span>
-                </button>
-            </div>
-        </section>
-
-
-    </li>
-
-    <li class="installation">
-        <section class="installationIDE">
-            <h1 class="text-center" style="margin-top: 10%">IDE & installation</h1>
-            <p class="text-center"> Informations tirés de <code>moi.même</code></p>
-        </section>
-    </li>
-
-    <li class="4">
-
-    </li>
-</ul>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
